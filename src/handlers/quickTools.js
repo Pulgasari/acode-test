@@ -7,19 +7,8 @@ import KeyboardEvent from "utils/keyboardEvent";
 /**@type {HTMLInputElement | HTMLTextAreaElement} */
 let input;
 
-const state = {
-	shift: false,
-	alt: false,
-	ctrl: false,
-	meta: false,
-};
-
-const events = {
-	shift: [],
-	alt: [],
-	ctrl: [],
-	meta: [],
-};
+const  state = { shift: false, alt: false, ctrl: false, meta: false };
+const events = { shift:    [], alt:    [], ctrl:    [], meta:    [] };
 
 /**
  * @typedef { 'shift' | 'alt' | 'ctrl' | 'meta' } QuickToolsEvent
